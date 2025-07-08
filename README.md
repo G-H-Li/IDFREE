@@ -1,0 +1,1 @@
+Source code for **From ID-based to ID-free: Rethinking ID Effectiveness in Multimodal Collaborative Filtering Recommendation** [ACM MM'25]
