@@ -1,0 +1,35 @@
+embedding_size: 64
+m_alpha: 0.5
+gcn_layers: 4
+# baby：15  sports:4  clothing: 3超参：[2, 3, 4, 5, 10, 15, 20, 25]
+knn_k: 5
+# baby:10 sports:5  clothing:5 超参：[5, 10, 20]
+tau: 0.2
+# baby: 0.2 sports:0.2 clothing:0.2 超参：[0.1, 0.2, 0.3]
+
+# 以下为消融参数
+lamda: 1.
+# default：1. 消融：0.
+dropout: 0.8
+# baby：0.8, sports: 0.8 clothing:0.8 消融： 0. 超参：[0.4, 0.6, 0.8]
+asg: True
+# default：True. 消融：False
+auige: True
+# default：True. 消融：False
+pe: True
+# default：True. 消融：False
+use_id: False
+# default：False. 消融：True
+
+# 模态消融
+use_text: True
+use_image: True
+
+
+# 保存中间结果
+save_intermediate: False
+save_path: '../saved/'
+
+
+hyper_parameters: []
+# "gcn_layers", "knn_k", "tau", "dropout"
